@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    
+    height: 1600px;
+    width: 100%;
+    background: black;
+    overflow-y: hidden;
+    z-index: -2;
+}
+.logo{
+    display: inline-block;
+    width: 160px;
+    transition-duration: 6s;
+}
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    text-decoration-color: rgb(17, 17, 170);
+}
+.logo img{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+    border-radius: 26px;
+}
+.logo #logo-cap{
+    display: absolute;
+    margin-top: 110px;
+    margin-left: 12px;
+    color: white;
+}
+.nav-bar{
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 320px;
+}
+.nav{
+    display: absolute;
+    margin-top: 30px;
+}
+.nav li{
+    display: inline-flex;
+    gap: 50px;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    transition-duration: 1s;
+}
+.nav li #a1::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(9, 151, 194);
+    left: 496px;
+    transition: 0.4s;
+}
+.nav li #a1:hover::after{
+    width: 45px;
+}
+.nav li #a2::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(194, 61, 9);
+    left: 640px;
+    transition: 0.4s;
+}
+.nav li #a2:hover::after{
+    width: 50px;
+}
+.nav li #a3::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(120, 9, 194);
+    left: 795px;
+    transition: 0.4s;
+}
+.nav li #a3:hover::after{
+    width: 41px;
+}
+#log{
+    
+    border-color: white;
+    margin-top: 30px;
+    border-style: solid;
+    border-width: 2px;
+    height: 30px;
+    padding: 5px;
+    border-bottom-left-radius: 18px;
+    transition: 0.3s;
+    z-index: 2;
+    
+    
+}
+#log a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+#log:hover{
+    box-shadow:  3px 5px 20px rgba(248, 248, 248, 0.3);
+    background-color: rgb(1, 236, 253);
+    color: black;
+    cursor: pointer;
+}
+.head{
+    color: wheat;
+    margin-top: 15px;
+    transform: translate(30%);
+    font-size: 28px;
+    font-weight: 600;
+    z-index: 2;
+}
+.head:hover{
+    cursor: pointer;
+}
+.head::after{
+    width: 0px;
+    height: 3px;
+    background: rgb(1, 236, 253);
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 25px;
+}
+.head:hover::after{
+    width: 640px;
+    cursor: pointer;
+}
+.store{
+    position: relative;
+    height: 2000px;
+    width: 100%;
+    margin-left: 60px;
+    top: 30px;
+}
+.store div{
+    width: 270px;
+    height: 350px;
+    background-color: rgba(253, 253, 253, 0.726);
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    display: inline-flex;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.store div:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(20, 55, 134, 0.336);
+}
+.store div img{
+    width: 250px;
+    height: 220px;
+    position: relative;
+    left: 8px;
+    top: -50px;
+    border: solid 2px black;
+}
+.store .item1 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item1 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item1 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item1 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item2 #capt{
+    position: relative;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item2 #price{
+    position: relative;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item2 #buy{
+    position: relative;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item2 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item3 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item3 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item3 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item3 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item4 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item4 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item4 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item4 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item5 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item5 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item5 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item5 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item6 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item6 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item6 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item6 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item7 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item7 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item7 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item7 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item8 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item8 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item8 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item8 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item9 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item9 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item9 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item9 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item10 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item10 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item10 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item10 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item11 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item11 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item11 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item11 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}
+.store .item12 #capt{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    /*background: red;*/
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.store .item12 #price{
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    /*background: red;*/
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.store .item12 #buy{
+    position: absolute;
+    top: 325px;
+    left: 55px;
+    background: rgb(55, 0, 255);
+    border-radius: 20px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.store .item12 #buy:hover{
+    background: rgb(33, 145, 107);
+    transition: 1s;
+}

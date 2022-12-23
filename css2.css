@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: url(images/klim-musalimov-rDMacl1FDjw-unsplash.jpg);
+    height: 100vh;
+}
+.logo{
+    display: inline-block;
+    width: 160px;
+    transition-duration: 6s;
+}
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    text-decoration-color: rgb(17, 17, 170);
+}
+.logo img{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+    border-radius: 26px;
+}
+.logo #logo-cap{
+    display: absolute;
+    margin-top: 110px;
+    margin-left: 12px;
+    color: white;
+}
+.nav-bar{
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 350px;
+}
+.nav{
+    display: absolute;
+    margin-top: 30px;
+}
+.nav li{
+    display: inline-flex;
+    gap: 50px;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    transition-duration: 1s;
+}
+.nav li #a1::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(9, 151, 194);
+    left: 526px;
+    transition: 0.4s;
+}
+.nav li #a1:hover::after{
+    width: 45px;
+}
+.nav li #a2::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(194, 61, 9);
+    left: 670px;
+    transition: 0.4s;
+}
+.nav li #a2:hover::after{
+    width: 50px;
+}
+.nav li #a3::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(120, 9, 194);
+    left: 819px;
+    transition: 0.4s;
+}
+.nav li #a3:hover::after{
+    width: 58px;
+}
+#head{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    left: 620px;
+    font-size: 28px;
+}
+#head:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(231, 14, 87);
+}
+#log-box{
+    position: absolute;
+    width: 360px;
+    height: 400px;
+    background-color: wheat;
+    top: 230px;
+    left: 500px;
+    border-radius: 32px;
+}
+#log-box:hover{
+    background-color: rgb(110, 192, 165);
+}
+#log-box img{
+    height: 80px;
+    margin-top: -37px;
+    margin-left: 132px;
+}
+#user #username{
+    position: absolute;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-width: 2px;
+    background-color: transparent;
+    top: 70px;
+    left: 11px;
+    border-color: black;
+    resize: none;
+}
+#pass{
+    position: relative;
+    top: 70px;
+}
+#pass #password{
+    position: absolute;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-width: 2px;
+    background-color: transparent;
+    top: 20px;
+    left: 11px;
+    border-color: black;
+    resize: none;
+}
+#auth{
+    padding: 10px;
+    background-color: rgb(218, 12, 80);
+    position: absolute;
+    top: 210px;
+    left: 117px;
+    width: 120px;
+    border-radius: 18px;
+}
+.exception{
+    position: absolute;
+    top: 270px;
+}
+@media screen and (min-width: 310px){
+    .logo img{
+        width: 60px;
+        height: 60px;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+    .logo #logo-cap{
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 120px;
+        margin-left: -500px;
+        background-color: wheat;
+    }
+    .nav li{
+        display: inline-flex;
+        gap: 20px;
+        padding-top: 14px;
+    }
+    .nav li a{
+        color: rgb(0, 0, 0);
+    }
+    .header{
+        height: 800px;
+    }
+    #head{
+        color: rgb(255, 255, 255);
+        left: 117px;
+        top: 190px;
+    }
+    #log-box{
+        left: -19px;
+        top: 270px;
+        transform: scale(0.88);
+        transform: scaleX(0.74);
+    }
+}
+@media screen and (min-width: 355px){
+    .nav li{
+        display: inline-flex;
+        gap: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    #head{
+        left: 122px;
+    }
+    #log-box{
+        margin-left: 20px;
+        top: 270px;
+        transform: scale(0.88);
+        transform: scaleX(0.84);
+    }
+}
+@media screen and (min-width: 385px){
+    .nav li{
+        display: inline-flex;
+        gap: 50px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    #head{
+        left: 145px;
+        top: 215px;
+    }
+    #log-box{
+        margin-left: 35px;
+        top: 310px;
+        transform: scale(0.88);
+        transform: scaleX(0.88);
+    }
+}
+@media screen and (min-width: 425px){
+    .nav li{
+        gap: 65px;
+    }
+    #head{
+        left: 155px;
+        top: 215px;
+    }
+    #log-box{
+        margin-left: 50px;
+        top: 310px;
+        transform: scale(0.92);
+        transform: scaleX(0.90);
+    }
+}
+@media screen and (min-width: 760px){
+    .nav li{
+        gap: 234px;
+    }
+    #head{
+        left: 355px;
+    }
+    .header{
+        height: 1000px;
+        overflow-y: hidden;
+    }
+    #log-box{
+        margin-left: 210px;
+        top: 330px;
+        transform: scale(0.92);
+        transform: scaleX(0.90);
+    }
+}
+@media screen and (min-width: 800px){
+    .header{
+        height:1300px;
+    }
+    .nav{
+        margin-top: 150px;
+        margin-left: -460px;
+    }
+    .nav li{
+        gap: 214px;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .logo #logo-cap{
+        margin-top: 100px;
+    }
+    #head{
+        top: 240px;
+    }
+    #log-box{
+        margin-left: 240px;
+    }
+}
+@media screen and (min-width: 1100px){
+    .nav{
+        margin-top: 150px;
+        margin-left: -350px;
+    }
+    .nav li{
+        gap: 264px;
+    }
+    #log-box{
+        margin-left:400px;
+        top: 360px;
+        transform: scale(1.1);
+        transform: scaleX(1.2);
+    }
+    #head{
+        left: 490px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .header{
+        background: url(images/klim-musalimov-rDMacl1FDjw-unsplash.jpg);
+        height: 100vh;
+    }
+    .logo{
+        display: inline-block;
+        width: 160px;
+        transition-duration: 6s;
+    }
+    .logo:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        cursor: pointer;
+        text-decoration-color: rgb(17, 17, 170);
+    }
+    .logo img{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+        top: 20px;
+        left: 33px;
+        border-radius: 26px;
+    }
+    .logo #logo-cap{
+        display: absolute;
+        margin-top: 90px;
+        margin-left: 12px;
+        color: white;
+    }
+    .nav-bar{
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 350px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 19px;
+        background-color: transparent;
+        margin-left: 2px;
+    }
+    .nav li{
+        display: inline-flex;
+        gap: 50px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 18px;
+        padding: 16px;
+        transition-duration: 1s;
+    }
+    .nav li #a1::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(9, 151, 194);
+        left: 526px;
+        transition: 0.4s;
+    }
+    .nav li #a1:hover::after{
+        width: 45px;
+    }
+    .nav li #a2::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(194, 61, 9);
+        left: 670px;
+        transition: 0.4s;
+    }
+    .nav li #a2:hover::after{
+        width: 50px;
+    }
+    .nav li #a3::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(120, 9, 194);
+        left: 819px;
+        transition: 0.4s;
+    }
+    .nav li #a3:hover::after{
+        width: 58px;
+    }
+    #head{
+        color: white;
+        font-family: 'Heebo', sans-serif;
+        position: absolute;
+        left: 620px;
+        font-size: 28px;
+        margin-top: -120px;
+    }
+    #head:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(231, 14, 87);
+    }
+    #log-box{
+        transform: scale(1.0);
+        top: 230px;
+        left: 100px;
+    }
+    #log-box:hover{
+        background-color: rgb(110, 192, 165);
+    }
+    #log-box img{
+        height: 80px;
+        margin-top: -37px;
+        margin-left: 132px;
+    }
+    #user #username{
+        position: absolute;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-width: 2px;
+        background-color: transparent;
+        top: 70px;
+        left: 11px;
+        border-color: black;
+        resize: none;
+    }
+    #pass{
+        position: relative;
+        top: 70px;
+    }
+    #pass #password{
+        position: absolute;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-width: 2px;
+        background-color: transparent;
+        top: 20px;
+        left: 11px;
+        border-color: black;
+        resize: none;
+    }
+    #auth{
+        padding: 10px;
+        background-color: rgb(218, 12, 80);
+        position: absolute;
+        top: 210px;
+        left: 117px;
+        width: 120px;
+        border-radius: 18px;
+    }
+    .exception{
+        position: absolute;
+        top: 270px;
+    }
+}

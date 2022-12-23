@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    
+    height: 800px;
+    width: 100%;
+    background: black;
+    overflow-y: hidden;
+}
+.logo{
+    display: inline-block;
+    width: 160px;
+    transition-duration: 6s;
+}
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    text-decoration-color: rgb(17, 17, 170);
+}
+.logo img{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+    border-radius: 26px;
+}
+.logo #logo-cap{
+    display: absolute;
+    margin-top: 110px;
+    margin-left: 12px;
+    color: white;
+}
+.nav-bar{
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 320px;
+}
+.nav{
+    display: absolute;
+    margin-top: 30px;
+}
+.nav li{
+    display: inline-flex;
+    gap: 50px;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    transition-duration: 1s;
+}
+.nav li #a1::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(9, 151, 194);
+    left: 496px;
+    transition: 0.4s;
+}
+.nav li #a1:hover::after{
+    width: 45px;
+}
+.nav li #a2::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(194, 61, 9);
+    left: 640px;
+    transition: 0.4s;
+}
+.nav li #a2:hover::after{
+    width: 50px;
+}
+.nav li #a3::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(120, 9, 194);
+    left: 809px;
+    transition: 0.4s;
+}
+.nav li #a3:hover::after{
+    width: 58px;
+}
+#log{
+    
+    border-color: white;
+    margin-top: 30px;
+    border-style: solid;
+    border-width: 2px;
+    height: 30px;
+    padding: 5px;
+    border-bottom-left-radius: 18px;
+    transition: 0.3s;
+    
+    
+}
+#log a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+#log:hover{
+    box-shadow:  3px 5px rgba(2, 184, 184, 0.3);
+    background-color: rgb(1, 236, 253);
+    color: black;
+    cursor: pointer;
+}
+.head{
+    color: wheat;
+    margin-top: 15px;
+    transform: translate(30%);
+    font-size: 28px;
+    font-weight: 600;
+}
+.head:hover{
+    cursor: pointer;
+}
+.head::after{
+    width: 0px;
+    height: 3px;
+    background: rgb(1, 236, 253);
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 25px;
+}
+.head:hover::after{
+    width: 600px;
+    cursor: pointer;
+}
+.head1{
+    color: rgb(0, 102, 105);
+    margin-top: 15px;
+    transform: translate(45%);
+    font-size: 28px;
+    font-weight: 600;
+}
+.selectors{
+    text-align: center;
+    display: flex;
+    margin-left: 527px;
+    margin-top: 150px;
+}
+.selector1,.selector2{
+    border-style: double;
+    border-color: rgb(12, 255, 243);
+    width: 80px;
+    height: 20px;
+    margin-top: 40px;
+    padding: 15px;
+    margin-left: 56px;
+    
+    font-weight: 600;
+    z-index: 2;
+    
+    
+}
+.selector1 a,.selector2 a{
+    text-decoration: none;
+    color: white;
+}
+.selector2{
+   
+}
+/*.selector1::before{
+    content: "";
+    background: rgba(4, 15, 112, 0.486);
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    left: 529px;
+    top: 63%;
+    transition: 0.5s;
+
+    
+}*/
+.selector2::before{
+    content: "";
+    background: rgba(4, 15, 112, 0.486);
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    left: 585px;
+    top: 63%;
+    transition: 0.5s;
+    
+}
+
+
+.selector1:hover::before{
+    width: 109px;
+}
+.selector2:hover::before{
+    width: 109px;
+}

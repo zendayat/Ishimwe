@@ -1,0 +1,1019 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: linear-gradient(to right, rgba(61, 56, 56, 0.822), rgba(104, 154, 204, 0.822)), url(images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    height: 800px;
+    
+}
+.logo{
+    display: inline-block;
+    width: 160px;
+    transition-duration: 6s;
+}
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    text-decoration-color: rgb(17, 17, 170);
+}
+.logo img{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+    border-radius: 26px;
+}
+.logo #logo-cap{
+    display: absolute;
+    margin-top: 110px;
+    margin-left: 12px;
+    color: white;
+}
+.nav-bar{
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 350px;
+}
+.nav{
+    display: absolute;
+    margin-top: 30px;
+}
+.nav li{
+    display: inline-flex;
+    gap: 50px;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    transition-duration: 1s;
+}
+.nav li #a1::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(9, 151, 194);
+    left: 526px;
+    transition: 0.4s;
+}
+.nav li #a1:hover::after{
+    width: 45px;
+}
+.nav li #a2::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(194, 61, 9);
+    left: 670px;
+    transition: 0.4s;
+}
+.nav li #a2:hover::after{
+    width: 50px;
+}
+.nav li #a3::after{
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    width: 0;
+    background: rgb(120, 9, 194);
+    left: 827px;
+    transition: 0.4s;
+}
+.nav li #a3:hover::after{
+    width: 41px;
+}
+#head{
+    color: rgb(0, 0, 0);
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    left: 590px;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+#head:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(231, 14, 87);
+}
+.motiv{
+    height: 240px;
+    width: 320px;
+    background-color: rgb(110, 218, 110);
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    border-radius: 35px;
+    display: inline-flex;
+}
+.form{
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-style: double;
+    left: 920px;
+    display: inline-block;
+    top: 170px;
+}
+#user{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+#user textarea{
+    border-bottom: hidden;
+    border-style: double;
+}
+#write{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+#write textarea{
+    border-bottom: hidden;
+    border-style: double;
+}
+#button{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+
+#m2{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    font-family: 'Courgette', cursive;
+}
+#c1{
+    height: 200px;
+    width: 370px;
+    background-color: rgba(68, 26, 26, 0.815);
+    position: absolute;
+    left: 300px;
+    top: 290px;
+    border-style: solid;
+    border-left: black;
+    border-top-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+#c1 img{
+    height: 80px;
+    margin-top: -37px;
+    margin-left: 140px;
+}
+#c2{
+    height: 200px;
+    width: 370px;
+    background-color: rgba(68, 26, 26, 0.815);
+    position: absolute;
+    left: -150px;
+    top: 290px;
+    border-style: solid;
+    border-left: black;
+    border-top-left-radius: 19px;
+}
+#c2 img{
+    height: 80px;
+    margin-top: -37px;
+    margin-left: 132px;
+}
+.c3{
+    height: 200px;
+    width: 370px;
+    background-color: rgba(68, 26, 26, 0.815);
+    position: relative;
+    left: -430px;
+    top: 200px;
+    border-style: solid;
+    border-left: black;
+}
+.c3 img{
+    height: 80px;
+    margin-top: -37px;
+    margin-left: 132px;
+}
+.foot{
+    height: 300px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 670px;
+}
+.foot h4{
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+#socialsi{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+#socialsi li{
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    left: 600px;
+    top: 60px;
+    padding-left: 85px;
+}
+#socialsi li ul{
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#socials h4{
+    position: absolute;
+    left: 600px;
+    color: white;
+    top: 40px;
+
+}
+#socials li{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 600px;
+    top: 60px;
+}
+#socials li ul{
+    padding-top: 5px;
+}
+#visit li{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 60px;
+}
+#visit li ul{
+    padding-top: 5px;
+}
+#copyrights h4{
+    position: absolute;
+    left: 1100px;
+    color: white;
+    top: 40px;
+
+}
+#copyrights li{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 1100px;
+    top: 60px;
+}
+#copyrights li ul{
+    padding-top: 5px;
+}
+.watermark{
+    position: absolute;
+    top: 110px;
+    left: 600px;
+}
+.watermark img{
+    height: 180px;
+    width: 180px;
+}
+#caption{
+    position: absolute;
+    top: 1020px;
+    left: 330px;
+}
+#caption #s{
+    font-family: 'Shalimar', cursive;
+    font-size: 48px;
+}
+#text1{
+    width: 300px;
+    height: 50px;
+    resize:none;
+    margin-top:7px;
+    background-color:rgb(184, 205, 206);
+}
+#text2{
+    width: 300px;
+    height: 150px;
+    resize:none;
+    margin-top:7px;
+    background-color:rgb(184, 205, 206);
+}
+@media screen and (min-width: 310px){
+    .header{
+        /*overflow-x: hidden;*/
+    }
+    .nav-bar{
+        overflow-y: hidden;
+    }
+    .logo{
+        width: 140px;
+    }
+    .logo img{
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        left: 23px;
+    }
+    .logo #logo-cap{
+        display: absolute;
+        margin-top: 80px;
+        margin-left: 22px;
+        font-size: 15px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 2px;
+        margin-left: -280px;
+    }
+    .nav li ul{
+        padding-top: 18px;
+    }
+    .nav li{
+        display: inline-block;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size: 14px;
+        padding: 5px;
+        transition-duration: 1s;
+        border-radius: 18px;
+    }
+    #m2{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        font-family: 'Courgette', cursive;
+    }
+    #m2{
+        visibility: hidden;
+    }
+    .motiv{
+        background-color: transparent;
+    }
+    #c2{
+        position: absolute;
+        transform: scale(0.65);
+        left: -210px;
+        top: 330px;
+    }
+    .form{
+        position: absolute;
+        width: 275px;
+        height: 350px;
+        border-style: double;
+        left: 20px;
+        display: inline-block;
+        top: 150px;
+    }
+    #user span, #write span{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    #write span{
+        margin-top: -40px;
+    }
+    #user textarea{
+        height: 30px;
+        width: 250px;
+    }
+    #write textarea{
+        height: 100px;
+        width: 250px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: -130px;
+    }
+    #button{
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 35px;
+    }
+    #socialsi{
+        position: absolute;
+        margin-top: 187px;
+        margin-left: -15px;
+    }
+    #write{
+        margin-top: 0px;
+        font-weight: 600;
+        margin-left: 10px;
+        justify-content: space-around;
+        display: inline-block;
+    }
+    .header{
+        background: linear-gradient(to right, rgba(61, 56, 56, 0.822), rgba(104, 154, 204, 0.822)), url(images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+        height: 920px;
+    }
+    #head{
+        left: 100px;
+        font-size: 17px;
+    }
+    .foot{
+        top: 800px;
+    }
+    #c1{
+        position: absolute;
+        transform: scale(0.65);
+        left: -210px;
+        top: 495px;
+    }
+    .foot h4{
+        left: 20px;
+        font-size: 13px;
+    }
+    #visit li{
+        left: 20px;
+        font-size: 12px;
+    }
+    #socials h4{
+        left: 160px;
+        font-size: 13px;
+    }
+    #socials li{
+        left: 150px;
+        font-size: 12px;
+    }
+    #copyrights h4{
+        left: 160px;
+        font-size: 13px;
+        top: 180px;
+    }
+    #copyrights li{
+        left: 150px;
+        font-size: 12px;
+        top: 200px;
+    }
+    .watermark{
+        top: 110px;
+        left:10px;
+    }
+    .watermark img{
+        height: 140px;
+        width: 140px;
+    }
+}
+@media screen and (min-width: 360px){
+    .nav{
+        display: absolute;
+        margin-top: 10px;
+        margin-left: -220px;
+    }
+    .nav li{
+        display: inline-block;
+    }
+    .nav li ul{
+        padding-top: 18px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size: 14px;
+        padding: 5px;
+        transition-duration: 1s;
+        border-radius: 17px;
+    }
+    #c2{
+        position: absolute;
+        transform: scale(0.65);
+        left: -190px;
+        top: 330px;
+    }
+    #c1{
+        position: absolute;
+        transform: scale(0.65);
+        left: -190px;
+        top: 495px;
+    }
+    #socials h4{
+        left: 190px;
+        font-size: 15px;
+    }
+    #socials li{
+        left: 190px;
+        font-size: 13px;
+    }
+    .watermark{
+        top: 110px;
+        left:10px;
+    }
+    .watermark img{
+        height: 140px;
+        width: 140px;
+    }
+    #head{
+        left: 120px;
+    }
+}
+@media screen and (min-width: 390px){
+    .nav{
+        margin-left: -190px;
+    }
+    #head{
+        left: 130px;
+    }
+    .form{
+        width: 308px;
+        height: 350px;
+        left: 40px;
+    }
+    #user textarea{
+        height: 37px;
+        width: 265px;
+    }
+    #write textarea{
+        height: 100px;
+        width: 265px;
+    }
+    #write span{
+        margin-top: -30px;
+    }
+}
+@media screen and (min-width: 390px){
+    .nav{
+        margin-left: -180px;
+    }
+    .form{
+        width: 315px;
+        height: 350px;
+        left: 48px;
+    }
+    #button{
+        margin-left: 48px;
+    }
+    #socialsi{
+        margin-left: -10px;
+    }
+    #c1{
+        left: -160px;
+        top: 320px;
+    }
+    #c2{
+        left: -160px;
+        top: 510px;
+    }
+    #socials h4{
+        left: 230px;
+        font-size: 15px;
+    }
+    #socials li{
+        left: 230px;
+        font-size: 13px;
+    }
+    .watermark{
+        top: 110px;
+        left:10px;
+    }
+    .watermark img{
+        height: 140px;
+        width: 140px;
+    }
+}
+@media screen and (min-width: 760px){
+    .form{
+        width: 350px;
+        height: 500px;
+        left: 380px;
+        top: 210px;
+    }
+    #c1{
+        top: 60px;
+    }
+    #c2{
+        top:260px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .logo #logo-cap{
+        margin-top: 100px;
+        margin-left: 14px;
+        color: white;
+        font-size: 14px;
+    }
+    #button{
+        margin-left: 68px;
+        margin-top: 200px;
+    }
+    #socialsi{
+        margin-left: 10px;
+        margin-top: 260px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 30px;
+    }
+    .nav li{
+        display: inline-flex;
+        gap: 50px;
+    }
+    .nav li a{
+        font-size: 23px;
+        padding: 16px;
+        transition-duration: 1s;
+    }
+    .nav li a::after{
+        visibility: hidden;
+    }
+    #user span, #write span{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    #write span{
+        margin-top: -60px;
+    }
+    #user textarea{
+        height: 40px;
+        width: 300px;
+    }
+    #write textarea{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: -170px;
+    }
+    #head{
+        left: 290px;
+        top: 150px;
+        font-size: 28px;
+    }
+    #socials h4{
+        left: 510px;
+        font-size: 22px;
+    }
+    #socials li{
+        left: 510px;
+        font-size: 20px;
+    }
+    .foot h4{
+        left: 30px;
+        font-size: 22px;
+    }
+    #visit li{
+        left: 30px;
+        font-size: 20px;
+    }
+    .watermark{
+        top: 120px;
+        left:280px;
+    }
+}
+@media screen and (min-width: 1100px){
+    #head{
+        left: 450px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 30px;
+        margin-left: -140px;
+    }
+    .form{
+        margin-left: 300px;
+    }
+    #c1{
+        transform: scale(1.0);
+    }
+    #c2{
+        transform: scale(1.0);
+        top: 330px;
+    }
+    #copyrights h4{
+        font-size: 22px;
+        left: 930px;
+    }
+    #copyrights li{
+        left: 926px;
+        font-size: 20px;
+    }
+    .watermark{
+        left: 480px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .header{
+        background: linear-gradient(to right, rgba(61, 56, 56, 0.822), rgba(104, 154, 204, 0.822)), url(images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+        height: 800px;
+    }
+    .logo{
+        display: inline-block;
+        width: 160px;
+        transition-duration: 6s;
+    }
+    .logo:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        cursor: pointer;
+        text-decoration-color: rgb(17, 17, 170);
+    }
+    .logo img{
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        top: 20px;
+        left: 33px;
+        border-radius: 26px;
+    }
+    .logo #logo-cap{
+        display: absolute;
+        margin-top: 110px;
+        margin-left: 12px;
+        color: white;
+    }
+    .nav-bar{
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 350px;
+    }
+    .nav{
+        display: absolute;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .nav li{
+        display: inline-flex;
+        gap: 50px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 18px;
+        padding: 16px;
+        transition-duration: 1s;
+    }
+    .nav li #a1::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(9, 151, 194);
+        left: 526px;
+        transition: 0.4s;
+    }
+    .nav li #a1:hover::after{
+        width: 45px;
+    }
+    .nav li #a2::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(194, 61, 9);
+        left: 670px;
+        transition: 0.4s;
+    }
+    .nav li #a2:hover::after{
+        width: 50px;
+    }
+    .nav li #a3::after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 53px;
+        width: 0;
+        background: rgb(120, 9, 194);
+        left: 827px;
+        transition: 0.4s;
+    }
+    .nav li #a3:hover::after{
+        width: 41px;
+    }
+    #head{
+        color: rgb(0, 0, 0);
+        font-family: 'Heebo', sans-serif;
+        position: absolute;
+        left: 590px;
+        font-size: 28px;
+        font-weight: 600;
+        top: 130px;
+    }
+    #head:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(231, 14, 87);
+    }
+    .motiv{
+        height: 240px;
+        width: 320px;
+        background-color: rgb(110, 218, 110);
+        position: absolute;
+        top: 180px;
+        left: 180px;
+        border-radius: 35px;
+        display: inline-flex;
+    }
+    .form{
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        border-style: double;
+        left: 620px;
+        display: inline-block;
+        top: 170px;
+    }
+    #user{
+        margin-top: 20px;
+        font-weight: 600;
+        margin-left: 10px;
+        justify-content: space-around;
+    }
+    #user textarea{
+        border-bottom: hidden;
+        border-style: double;
+    }
+    #write{
+        margin-top: 20px;
+        font-weight: 600;
+        margin-left: 10px;
+        justify-content: space-around;
+    }
+    #write textarea{
+        border-bottom: hidden;
+        border-style: double;
+    }
+    #button{
+        margin-left: 70px;
+        margin-top: 190px;
+    }
+    #m2{
+        position: relative;
+        top: 50px;
+        left: 10px;
+        font-family: 'Courgette', cursive;
+    }
+    .motiv:hover{
+        transform: scale(0.8);
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    #c1{
+        height: 200px;
+        width: 370px;
+        background-color: rgba(68, 26, 26, 0.815);
+        position: absolute;
+        left: 300px;
+        top: 290px;
+        border-style: solid;
+        border-left: black;
+        border-top-left-radius: 19px;
+        border-bottom-right-radius: 19px;
+    }
+    #c1 img{
+        height: 80px;
+        margin-top: -37px;
+        margin-left: 140px;
+    }
+    #c2{
+        height: 200px;
+        width: 370px;
+        background-color: rgba(68, 26, 26, 0.815);
+        position: absolute;
+        left: -150px;
+        top: 290px;
+        border-style: solid;
+        border-left: black;
+        border-top-left-radius: 19px;
+    }
+    #c2 img{
+        height: 80px;
+        margin-top: -37px;
+        margin-left: 132px;
+    }
+    .c3{
+        height: 200px;
+        width: 370px;
+        background-color: rgba(68, 26, 26, 0.815);
+        position: relative;
+        left: -430px;
+        top: 200px;
+        border-style: solid;
+        border-left: black;
+    }
+    .c3 img{
+        height: 80px;
+        margin-top: -37px;
+        margin-left: 132px;
+    }
+    .foot{
+        height: 300px;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        top: 670px;
+    }
+    .foot h4{
+        color: white;
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
+    #socialsi{
+        margin-top: 240px;
+        font-weight: 600;
+        margin-left: 10px;
+        justify-content: space-around;
+    }
+    #socialsi li{
+        display: inline-flex;
+        color: rgb(0, 0, 0);
+        left: 600px;
+        top: 60px;
+        padding-left: 85px;
+    }
+    #socialsi li ul{
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+    #socials h4{
+        position: absolute;
+        left: 600px;
+        color: white;
+        top: 40px;
+    }
+    #socials li{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        left: 600px;
+        top: 60px;
+    }
+    #socials li ul{
+        padding-top: 5px;
+    }
+    #visit li{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        left: 100px;
+        top: 60px;
+    }
+    #visit li ul{
+        padding-top: 5px;
+    }
+    #copyrights h4{
+        position: absolute;
+        left: 1100px;
+        color: white;
+        top: 40px;
+    }
+    #copyrights li{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        left: 1100px;
+        top: 60px;
+    }
+    #copyrights li ul{
+        padding-top: 5px;
+    }
+    .watermark{
+        position: absolute;
+        top: 110px;
+        left: 600px;
+    }
+    .watermark img{
+        height: 180px;
+        width: 180px;
+    }
+    #caption{
+        position: absolute;
+        top: 1020px;
+        left: 330px;
+    }
+    #caption #s{
+        font-family: 'Shalimar', cursive;
+        font-size: 48px;
+    }
+    #text1{
+        width: 300px;
+        height: 50px;
+        resize:none;
+        margin-top:7px;
+        background-color:rgb(184, 205, 206);
+    }
+    #text2{
+        width: 300px;
+        height: 150px;
+        resize:none;
+        margin-top:7px;
+        background-color:rgb(184, 205, 206);
+    }
+}
